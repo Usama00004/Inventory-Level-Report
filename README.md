@@ -6,16 +6,13 @@ The dashboard helps identify overstocking, stock risk, and opportunities for inv
 
 ![Inventory Level Report](https://github.com/Usama00004/Inventory-Level-Report/raw/main/Display%20Image.png)
 
-
-
-
 ## Objectives
 - Monitor **unrestricted (available) inventory** over time
 - Compare **current safety stock** vs **recommended safety stock (King’s SS)**
 - Enable users to dynamically filter by material, product, plant, and business unit
 - Support data-driven decisions for inventory optimization
 
-##  Dataset Structure
+## Dataset Structure
 
 ### Dimensions
 - `material_number` – Unique identifier for the material
@@ -29,7 +26,7 @@ The dashboard helps identify overstocking, stock risk, and opportunities for inv
 - `safety_stock` – Current safety stock maintained in ERP/APO
 - `kings_ss` – Recommended safety stock (optimized / reduced buffer)
 
-##  Data Preparation
+## Data Preparation
 - `calendar_month (YYYYMM)` is converted into a **date field** using the first day of the month (`YYYY-MM-01`)
 - Additional derived fields:
   - Month Name (January, February, …)
@@ -37,7 +34,7 @@ The dashboard helps identify overstocking, stock risk, and opportunities for inv
   - Year
 - Month names are sorted correctly using **Sort by Column**
 
-## 🎛️ Dashboard Filters (Global Filters)
+## Dashboard Filters (Global Filters)
 All filters are interconnected to ensure consistent slicing across visuals:
 
 - **Business Unit** – Filters available plants, products, and materials
@@ -47,7 +44,7 @@ All filters are interconnected to ensure consistent slicing across visuals:
 
 Selecting a material dynamically updates all visuals.
 
-##  Visualizations
+## Visualizations
 
 ### Current Stock Levels (Bar Chart)
 - **Chart Type:** Bar / Column Chart
